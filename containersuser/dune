@@ -1,0 +1,8 @@
+(library
+  (name containersuser)
+  (libraries containers))
+
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))

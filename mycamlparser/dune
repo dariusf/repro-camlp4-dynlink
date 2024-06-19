@@ -1,0 +1,10 @@
+(library
+  (name mycamlparser)
+  (libraries camlp4 camlp4.lib)
+  (preprocess (per_module
+    ((action (run camlp4of %{input-file})) mycamlparser))))
+
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))
