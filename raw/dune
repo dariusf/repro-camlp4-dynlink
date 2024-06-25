@@ -1,3 +1,5 @@
 (executable
   (name raw)
-  (libraries dynlink))
+  (libraries findlib.dynload
+  ; dynlink
+  ))
