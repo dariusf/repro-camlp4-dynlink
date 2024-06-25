@@ -1,3 +1,4 @@
 (executable
   (name raw)
-  (libraries dynlink))
+  (link_flags -linkall)
+  (libraries camlp4.lib containers dynlink))
